@@ -166,7 +166,7 @@ livenessProbe:
   # sonar.web.context: /sonarqube
 
 startupProbe:
-  initialDelaySeconds: 180
+  initialDelaySeconds: 60
   periodSeconds: 10
   failureThreshold: 24
   # If an ingress *path* other than the root (/) is defined, it should be reflected here
