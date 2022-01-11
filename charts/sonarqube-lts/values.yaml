@@ -32,7 +32,7 @@ image:
 
 # Set security context for sonarqube pod
 securityContext:
-  fsGroup: 1000
+  fsGroup: 2000
 
 # Set security context for sonarqube container
 containerSecurityContext:
@@ -350,7 +350,7 @@ postgresql:
     enabled: true
     # fsGroup and runAsUser specifications below are not applied if enabled=false. enabled=false is the required setting for OpenShift "restricted SCC" to work successfully.
     # postgresql dockerfile sets user as 1001
-    fsGroup: 1001
+    fsGroup: 2000
     runAsUser: 1001
   volumePermissions:
     # For standard Kubernetes deployment, set enabled=false
